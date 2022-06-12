@@ -144,6 +144,22 @@ const HomeScreen = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+
+        <div className='services_list'>
+          <h2>Quick view of our services</h2>
+          <div className='row'>
+            <ul>
+              <li>Schedule doctor appointment</li>
+              <li>Schedule doctor appointment</li>
+              <li>Schedule doctor appointment</li>
+              <li>Schedule doctor appointment</li>
+              <li>Schedule doctor appointment</li>
+              <li>Schedule doctor appointment</li>
+              <li>Schedule doctor appointment</li>
+              <li>Schedule doctor appointment</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
   )

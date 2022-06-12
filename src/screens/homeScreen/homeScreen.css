@@ -86,6 +86,15 @@
     color: #226B73;
 }
 
+.services_list > h2{
+    color: var(--color-primary);
+}
+
+.services_list > row{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
 /* ========== MEDIA QUERIES (MEDIUM DEVICES)  ==========  */
 @media screen and (max-width: 1024px) {
 
