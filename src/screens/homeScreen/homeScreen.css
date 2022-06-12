@@ -90,9 +90,56 @@
     color: var(--color-primary);
 }
 
-.services_list > row{
-    display: grid;
-    grid-template-rows: 1fr;
+
+.services_list-wrapper{
+    width: 100%;
+    height: 25vh;
+    overflow: scroll;
+}
+
+.services__list-container{
+    width: 100w;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.services_list > h2{
+    padding: 0 0.4rem;
+}
+
+.services__list-container > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.services__list-icon{
+    color: orangered;
+}
+
+.app__navigation{   
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__navigation-wraper{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.app__navigation-icon{
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+.app__navigation-p{
+    font-weight: 500;
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES)  ==========  */
@@ -110,31 +157,14 @@
         width: 80%;
     }
 
-    .about__container{
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
-    .about__me{
-        width: 50%;
-        margin: 2rem auto 4rem;
-    }
-
-    .about__content p{
-        margin: 1rem 0 1.5rem;
-    }
-    .about__content {
-        text-align: center;
-    }
-
 }
 
 /* ========== MEDIA QUERIES (SMALL DEVICES)  ==========  */
 @media screen and (max-width: 600px) {
 
-    .home__welcome {
-        padding: 1.4rem 0; 
-      }
+    .container{
+        width: 100%;
+    }
 
       .home__welcome > .btn {
         width: 75%;
@@ -150,19 +180,25 @@
     }
     
     .home__treatments > h2{
-        font-size: 0.8rem;
+        font-size: 1rem;
+        padding: 0 0.4rem;
     }
     .home__treatments > h3{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        padding: 0 0.4rem;
     }
 
     .slider__container{
         width: 100%;
-        height: 50%;
+        height: 55%;
     }
 
     .slider__header > h3{
         font-size: 0.7rem;
+    }
+
+    .services_list{
+        padding: 0 0.5rem;
     }
     
 }

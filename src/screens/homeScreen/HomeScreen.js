@@ -1,12 +1,25 @@
 import React from 'react'
 import './homeScreen.css'
 import { BiMessage, BiStore } from 'react-icons/bi'
-import { AiOutlineBell } from 'react-icons/ai'
+import { BsCardText } from 'react-icons/bs'
+import {
+  AiOutlineBell,
+  AiOutlineMedicineBox,
+  AiFillFolderOpen,
+  AiOutlineFileSearch,
+} from 'react-icons/ai'
 import { IoMdPaw } from 'react-icons/io'
-import { FaHeadSideVirus, FaLungsVirus, FaCarCrash } from 'react-icons/fa'
-import { MdOutlineCoronavirus } from 'react-icons/md'
+import {
+  FaHeadSideVirus,
+  FaCarCrash,
+  FaTemperatureHigh,
+  FaRegUserCircle,
+} from 'react-icons/fa'
+import { MdOutlineCoronavirus, MdKeyboardArrowRight } from 'react-icons/md'
+import { RiHospitalLine, RiLungsFill } from 'react-icons/ri'
 import { GiStomach, GiDogBowl } from 'react-icons/gi'
 import { TbVaccine } from 'react-icons/tb'
+import { GoHome } from 'react-icons/go'
 import { ImHeartBroken } from 'react-icons/im'
 
 // Import Swiper React components
@@ -66,7 +79,7 @@ const HomeScreen = () => {
           <SwiperSlide>
             <div className='slider__container'>
               <div className='slider__icon'>
-                <FaLungsVirus />
+                <RiLungsFill />
               </div>
               <div className='slider__header'>
                 <h3>Lungs </h3>
@@ -146,18 +159,164 @@ const HomeScreen = () => {
         </Swiper>
 
         <div className='services_list'>
-          <h2>Quick view of our services</h2>
-          <div className='row'>
+          <h2>Our services for your pets</h2>
+          <div className='row services_list-wrapper'>
             <ul>
-              <li>Schedule doctor appointment</li>
-              <li>Schedule doctor appointment</li>
-              <li>Schedule doctor appointment</li>
-              <li>Schedule doctor appointment</li>
-              <li>Schedule doctor appointment</li>
-              <li>Schedule doctor appointment</li>
-              <li>Schedule doctor appointment</li>
-              <li>Schedule doctor appointment</li>
+              <li>
+                <div className='services__list-container'>
+                  <div>
+                    <div className='services__list-icon'>
+                      <RiHospitalLine />
+                    </div>
+                    <p>Schedule doctor appointment</p>
+                  </div>
+                  <MdKeyboardArrowRight />
+                </div>
+              </li>
+
+              <li>
+                <div className='services__list-container'>
+                  <div>
+                    <div className='services__list-icon'>
+                      <BsCardText />
+                    </div>
+                    <p>See your pets prescriptions</p>
+                  </div>
+                  <MdKeyboardArrowRight />
+                </div>
+              </li>
+
+              <li>
+                <div className='services__list-container'>
+                  <div>
+                    <div className='services__list-icon'>
+                      <IoMdPaw />
+                    </div>
+                    <p>View your pets</p>
+                  </div>
+                  <MdKeyboardArrowRight />
+                </div>
+              </li>
+
+              <li>
+                <div className='services__list-container'>
+                  <div>
+                    <div className='services__list-icon'>
+                      <AiOutlineMedicineBox />
+                    </div>
+                    <p>View doctors</p>
+                  </div>
+                  <MdKeyboardArrowRight />
+                </div>
+              </li>
+
+              <li>
+                <div className='services__list-container'>
+                  <div>
+                    <div className='services__list-icon'>
+                      <AiFillFolderOpen />
+                    </div>
+                    <p>Your pet's past treatments</p>
+                  </div>
+                  <MdKeyboardArrowRight />
+                </div>
+              </li>
+
+              <li>
+                <div className='services__list-container'>
+                  <div>
+                    <div className='services__list-icon'>
+                      <RiLungsFill />
+                    </div>
+                    <p>Respiratory problems</p>
+                  </div>
+                  <MdKeyboardArrowRight />
+                </div>
+              </li>
+              <li>
+                <div className='services__list-container'>
+                  <div>
+                    <div className='services__list-icon'>
+                      <FaTemperatureHigh />
+                    </div>
+                    <p>Fieber</p>
+                  </div>
+                  <MdKeyboardArrowRight />
+                </div>
+              </li>
+
+              <li>
+                <div className='services__list-container'>
+                  <div>
+                    <div className='services__list-icon'>
+                      <GiStomach />
+                    </div>
+                    <p>Stomache appointment</p>
+                  </div>
+                  <MdKeyboardArrowRight />
+                </div>
+              </li>
+
+              <li>
+                <div className='services__list-container'>
+                  <div>
+                    <div className='services__list-icon'>
+                      <BiStore />
+                    </div>
+                    <p>Schedule doctor appointment</p>
+                  </div>
+                  <MdKeyboardArrowRight />
+                </div>
+              </li>
+              <li>
+                <div className='services__list-container'>
+                  <div>
+                    <div className='services__list-icon'>
+                      <BiStore />
+                    </div>
+                    <p>Schedule doctor appointment</p>
+                  </div>
+                  <MdKeyboardArrowRight />
+                </div>
+              </li>
+
+              <li>
+                <div className='services__list-container'>
+                  <div>
+                    <BiStore />
+                    <p>Schedule doctor appointment</p>
+                  </div>
+                  <MdKeyboardArrowRight />
+                </div>
+              </li>
             </ul>
+          </div>
+        </div>
+
+        <div className='app__navigation'>
+          <div className='app__navigation-wraper'>
+            <div className='app__navigation-icon'>
+              <GoHome />
+            </div>
+            <div>
+              <p className='app__navigation-p'>HOME</p>
+            </div>
+          </div>
+          <div className='app__navigation-wraper'>
+            <div className='app__navigation-icon'>
+              <AiOutlineFileSearch />
+            </div>
+            <div>
+              <p className='app__navigation-p'>APPOINTMENTS</p>
+            </div>
+          </div>
+          <div className='app__navigation-wraper'>
+            <div className='app__navigation-icon'>
+              <FaRegUserCircle />
+            </div>
+            <div>
+              <p className='app__navigation-p'>PROFILE</p>
+            </div>
           </div>
         </div>
       </section>
