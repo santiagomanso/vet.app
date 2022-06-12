@@ -1,12 +1,14 @@
 import React from 'react'
 import './homeScreen.css'
-import { BiMessage } from 'react-icons/bi'
+import { BiMessage, BiStore } from 'react-icons/bi'
 import { AiOutlineBell } from 'react-icons/ai'
 import { IoMdPaw } from 'react-icons/io'
-import { FaRegFlushed, FaLungsVirus } from 'react-icons/fa'
-
-import { GiStomach } from 'react-icons/gi'
+import { FaHeadSideVirus, FaLungsVirus, FaCarCrash } from 'react-icons/fa'
+import { MdOutlineCoronavirus } from 'react-icons/md'
+import { GiStomach, GiDogBowl } from 'react-icons/gi'
 import { TbVaccine } from 'react-icons/tb'
+import { ImHeartBroken } from 'react-icons/im'
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -67,7 +69,7 @@ const HomeScreen = () => {
                 <FaLungsVirus />
               </div>
               <div className='slider__header'>
-                <h3>Respiratory problems</h3>
+                <h3>Lungs </h3>
               </div>
             </div>
           </SwiperSlide>
@@ -77,34 +79,69 @@ const HomeScreen = () => {
                 <GiStomach />
               </div>
               <div className='slider__header'>
-                <h3>Stomage aches</h3>
+                <h3>Stomage </h3>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='slider__container'>
               <div className='slider__icon'>
-                <FaRegFlushed />
+                <GiDogBowl />
               </div>
               <div className='slider__header'>
-                <h3>Slide 1</h3>
+                <h3>Diet </h3>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='slider__container'>Slide 5</div>
+            <div className='slider__container'>
+              <div className='slider__icon'>
+                <ImHeartBroken />
+              </div>
+              <div className='slider__header'>
+                <h3>Castration</h3>
+              </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>Slide 6</div>
+            <div className='slider__container'>
+              <div className='slider__icon'>
+                <FaCarCrash />
+              </div>
+              <div className='slider__header'>
+                <h3>Vehicules </h3>
+              </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='slider__container'>Slide 7</div>
+            <div className='slider__container'>
+              <div className='slider__icon'>
+                <MdOutlineCoronavirus />
+              </div>
+              <div className='slider__header'>
+                <h3>Viruses </h3>
+              </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='slider__container'>Slide 8</div>
+            <div className='slider__container'>
+              <div className='slider__icon'>
+                <FaHeadSideVirus />
+              </div>
+              <div className='slider__header'>
+                <h3>Behaviour</h3>
+              </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='slider__container'>Slide 9</div>
+            <div className='slider__container'>
+              <div className='slider__icon'>
+                <BiStore />
+              </div>
+              <div className='slider__header'>
+                <h3>Visit Store</h3>
+              </div>
+            </div>
           </SwiperSlide>
         </Swiper>
       </section>
