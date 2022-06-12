@@ -15,11 +15,13 @@
   --color-bg-variant: #2c2c6c;
   --color-primary: #236871;
   --color-secondary: orangered;
-  --color-primary-variant: #52A8B6;
+  --color-primary-variant: #ffffff;
   --color-white: #dbdbdb;
   --color-light: rgba(235, 235, 235, 0.9);
 
   --transition: all 600ms ease;
+
+  --padding-global: 0 2rem 0 2rem;
 
   --container-width-lg: 50%;
   --container-width-md: 86%;
@@ -37,7 +39,7 @@ html{
 
 body{
   font-family: 'Poppins', sans-serif;
-  background: var(--color-white);
+  background: rgba(0, 0, 0, 0.753);
   color: black;
   line-height: 1.7;
   /* background-image: url(../src/assets/bg-texture.png); */
@@ -45,8 +47,15 @@ body{
 
 /* ============ GENERAL STYLES ============  */
 .container{
+  margin-top: 10px !important;
+  background-color: var(--color-primary-variant);
   width: var(--container-width-lg);
   margin: 0 auto;
+  border-radius: 3.3rem  2rem 3.6rem 2rem;
+  overflow: hidden;
+  height: 86vh;
+  box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 1);
+  border-radius: 1rem 5rem;
 }
 
 .btn{
@@ -61,13 +70,7 @@ body{
 
 
 
-.component__header{
-  margin-bottom: 1rem;
-  padding: 0 0.4rem;
-  display: flex;
-  justify-content: space-between;
-  color: black;
-}
+
 .component__header-icons{
   display: flex;
   gap: 1rem;
@@ -81,9 +84,7 @@ h1{
   font-size: 2.5rem;
 }
 
-section{
-  margin-top: 2rem;
-}
+
 
 section >  h2, section > h5{
   text-align: center;
@@ -114,6 +115,7 @@ a:hover{
   .container{
     width: var(--container-width-sm);
     margin: 0 auto;
+    height: 75vh;
   }
   
 }

@@ -1,9 +1,8 @@
 import React from 'react'
 import './homeScreen.css'
-import { BiMessage, BiStore } from 'react-icons/bi'
+import { BiStore } from 'react-icons/bi'
 import { BsCardText } from 'react-icons/bs'
 import {
-  AiOutlineBell,
   AiOutlineMedicineBox,
   AiFillFolderOpen,
   AiOutlineFileSearch,
@@ -31,20 +30,15 @@ import 'swiper/css/pagination'
 
 // import required modules
 import { Pagination } from 'swiper'
+import { Link, useNavigate } from 'react-router-dom'
+import Container from '../../components/Container'
+import Header from '../../components/Header'
 
 const HomeScreen = () => {
   return (
-    <div className='container'>
-      <section id='about'>
-        <div className='component__header'>
-          <h5>Home</h5>
-          <div className='component__header-icons'>
-            <IoMdPaw />
-            <BiMessage />
-            <AiOutlineBell />
-          </div>
-        </div>
-
+    <Container>
+      <Header />
+      <section>
         <div className='home__welcome'>
           <div className='home__welcome-header'>
             <h2>Hi Mr. John Doe</h2>
@@ -168,7 +162,11 @@ const HomeScreen = () => {
                     <div className='services__list-icon'>
                       <RiHospitalLine />
                     </div>
-                    <p>Schedule doctor appointment</p>
+                    <p>
+                      <Link to='/appointments/doctor'>
+                        Schedule doctor appointment
+                      </Link>
+                    </p>
                   </div>
                   <MdKeyboardArrowRight />
                 </div>
@@ -320,7 +318,7 @@ const HomeScreen = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Container>
   )
 }
 
