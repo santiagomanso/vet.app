@@ -262,20 +262,22 @@
     }
 
     .card{
-        height: 200px;
-        width: 200px;
+        height: 110px;
+        width: 110px;
     }
 
     .pet__img-div{
-        height: 130px;
-        width: 130px;
+        height: 70px;
+        width: 70px;
     }
 
     .card:hover{
         transform: scale(1.04);
     }
-
+    .pet__name-icon{
+        display: none;
+    }
     .pet__img-icons{ font-size: 1.3rem; }
-    .pet__delete-icon{ font-size: 2rem; }
+    .pet__delete-icon{ font-size: 1.2rem; }
 
 }
