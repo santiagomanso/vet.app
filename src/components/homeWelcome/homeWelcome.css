@@ -1,0 +1,57 @@
+.home__welcome{
+    background: var(--color-primary);
+    color: whitesmoke;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.home__welcome-header > h2,h3 {
+    text-align: center;
+}
+
+.home__welcome-header > h2 {
+    font-size: 2rem;
+  }
+
+.home__welcome-header > h3 {
+    font-size: 1.5rem;
+}
+
+.home__welcome > .btn {
+    width: 50%;
+    font-size: 1.3rem;
+    background: rgb(206, 107, 107);
+}
+.home__welcome > .btn:hover {
+    cursor: pointer;
+    background: rgba(51, 39, 39, 0.753);
+}
+
+
+/* ========== MEDIA QUERIES (SMALL DEVICES)  ==========  */
+@media screen and (max-width: 600px) {
+
+.home__welcome {
+    height: 20vh;
+}
+
+.home__welcome > .btn {
+    font-size: 1.2rem;
+    width: 75%;
+}
+
+
+.home__welcome-header > h2 {
+    font-size: 1.5rem;
+  }
+
+.home__welcome-header > h3 {
+    font-size: 1rem;
+}
+
+}

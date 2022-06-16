@@ -1,0 +1,67 @@
+.container__grid_responsive{
+  display: none;
+}
+.container__grid {  
+    display: grid;
+    align-items: center;
+    border: 1px solid gainsboro;
+    grid-template-columns: 0.6fr 0.9fr 1.3fr 1.4fr 0.9fr 1fr 0.4fr 0.4fr 0.4fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "date doctor-img name location pet reason see edit delete";
+  }
+  
+  .date { grid-area: date; }
+  
+  .doctor-img { grid-area: doctor-img; }
+  
+  .name { grid-area: name; }
+  
+  .location { grid-area: location; }
+  
+  .pet { grid-area: pet; }
+  
+  .reason { grid-area: reason; }
+  
+  .see { grid-area: see; }
+  
+  .edit { grid-area: edit; }
+  
+  .delete { grid-area: delete; }
+
+  @media screen and (max-width: 1100px) {
+
+    .container__grid {  
+      display: none;
+    }
+
+    .container__grid_responsive {  
+      border: 1px solid gainsboro;
+      display: grid;
+      align-items:flex-start;
+      justify-items:baseline;
+      grid-template-columns: 1.4fr 1.1fr 1.1fr 0.3fr 0.3fr 0.3fr; 
+      grid-template-rows: 0.5fr 1fr; 
+      gap: 0px 5px; 
+      grid-template-areas: 
+        "location doctor-img petImg date date date"
+        "reason DrName petName see edit delete"; 
+    }
+    .doctor-img { grid-area: doctor-img; }
+    .DrName { grid-area: DrName; }
+    .petImg { grid-area: petImg; }
+    .petName { grid-area: petName; }
+    .reason { grid-area: reason; }
+    .see { grid-area: see; }
+    .edit { grid-area: edit; }
+    .delete { grid-area: delete; }
+    .location { grid-area: location; }
+    .date { grid-area: date; }
+    
+    
+    
+    
+  }
+  
